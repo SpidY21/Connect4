@@ -23,6 +23,7 @@ public class Main extends Application {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("game.fxml"));
         GridPane rootGridPane = loader.load();
         controller = loader.getController();
+        controller.createPlayground();
         MenuBar menuBar = createMenu();
         menuBar.prefWidthProperty().bind(stage.widthProperty());
         Pane menuPane = (Pane) rootGridPane.getChildren().get(0);
