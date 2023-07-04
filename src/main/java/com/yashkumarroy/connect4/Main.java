@@ -83,7 +83,7 @@ public class Main extends Application {
     }
 
     private void resetGame() {
-        //TODO
+        controller.resetGame();
     }
 
     public static void main(String[] args) {
